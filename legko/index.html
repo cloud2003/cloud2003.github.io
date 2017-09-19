@@ -11,166 +11,32 @@
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-
         <symbol id="favorite" viewBox="0 0 31 31">
-            <path d="M15.286 1.43l3.784 10.316 10.5.595-8.162 6.974L24.114 30l-8.828-6.008L6.456 30l2.708-10.686L1 12.34l10.5-.594z" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.286 1.43l3.784 10.316 10.5.595-8.162 6.974L24.114 30l-8.828-6.008L6.456 30l2.708-10.686L1 12.34l10.5-.594z" stroke-width="2" stroke="" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
 
         <symbol id="delete" viewBox="0 0 25 32">
             <g stroke="#F00" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M23.5 7.75A3.75 3.75 0 0 0 19.75 4h-15A3.75 3.75 0 0 0 1 7.75M11.188 31H17.5c2.07 0 3.454-1.597 3.75-3.75L23.5 10M1 10h22.5M15.25 1h-6M11.188 31H7c-2.07 0-3.453-1.597-3.75-3.75L1 10M12.25 14.125v12.75M7 14.125l.75 12.75M17.5 14.125l-.75 12.75"/></g>
         </symbol>
-
     </svg>
 
     <div class="b-main">
         <h1>Управление карточками</h1>
         <div class="b-form-add">
-            <input type="text" class="b-input" placeholder="HEX значение" />
-            <button class="b-button">Добавить</button>
+            <input class="b-input" id="hexValue" type="text" placeholder="HEX значение" maxlength="6" />
+            <button class="b-button" id="addBtn">Добавить</button>
         </div>
 
-        <div class="b-box_justify">
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="b-card">
-                <div class="b-card__color"></div>
-                <div class="b-card__color-name">#FACE80</div>
-
-                <div class="b-card__fav">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#favorite" />
-                        </svg>
-                    </span>
-                </div>
-
-                <div class="b-card__del">
-                    <span class="icon icon-sm">
-                        <svg class="icon-svg">
-                            <use xlink:href="#delete" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
+        <div class="b-form-add__fav" id="favoriteBtn">
+            <span class="icon icon-sm">
+                <svg class="icon-svg">
+                    <use xlink:href="#favorite" />
+                </svg>
+            </span>
         </div>
+
+        <div class="b-box_justify" id="content"></div>
     </div>
+    <script type="text/javascript" src="js/init.js"></script>
 </body>
 </html>

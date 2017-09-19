@@ -289,6 +289,7 @@ a {
   max-width: 940px;
   margin: 0 auto;
   padding: 30px 5px;
+  transition: all .3s ease 0s;
 }
 h1 {
   font-size: 36px;
@@ -311,6 +312,18 @@ h1 {
   display: inline-block;
   height: inherit;
   width: 100%;
+}
+.b-form-add__fav {
+  stroke: gold;
+  color: transparent;
+  text-align: center;
+  margin: -28px 0 30px;
+}
+.b-form-add__fav:hover {
+  cursor: pointer;
+}
+.b-form-add__fav.selected {
+  color: gold;
 }
 .b-input[type="text"] {
   display: inline-block;
@@ -361,6 +374,7 @@ h1 {
   border: 1px solid rgba(28, 34, 51, 0.2);
   -webkit-border-radius: 9px;
   border-radius: 9px;
+  transition: all .3s ease 0s;
 }
 @media only screen and (max-width: 700px) {
   .b-card {
@@ -396,11 +410,27 @@ h1 {
 .b-card__fav {
   left: 7%;
 }
+.b-card__fav .icon {
+  stroke: #000000;
+  color: rgba(0, 0, 0, 0);
+}
+.b-card__fav .icon:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.b-card__fav.selected .icon {
+  color: #000;
+}
 .b-card__del {
   right: 7%;
 }
 .b-card .icon {
   cursor: pointer;
+}
+.b-card.hide {
+  display: none;
+}
+.b-card.visible {
+  opacity: 0;
 }
 .icon {
   display: inline-block;
