@@ -23,7 +23,7 @@
     <div class="b-main">
         <h1>Управление карточками</h1>
         <div class="b-form-add">
-            <input class="b-input" id="hexValue" type="text" placeholder="HEX значение" maxlength="6" />
+            <input class="b-input" id="hexValue" type="text" placeholder="HEX значение" pattern="/^#?([a-f0-9]{6}|[a-f0-9]{3})$/" maxlength="6" />
             <button class="b-button" id="addBtn">Добавить</button>
         </div>
 
