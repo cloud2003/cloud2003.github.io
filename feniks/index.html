@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feniks</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!--<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="init.js"></script>
+</head>
+<body>
+    <div class="b-main">
+        <h1 class="b-title">Модальное окно</h1>
+        <div class="b-button b-button_gray" id="openModalWin">Открыть</div>
+    </div>
+
+    <div class="b-modal_overlay"></div>
+    <div class="b-modal">
+        <div class="b-modal__close">×</div>
+        <div class="b-modal__title">Сохранить</div>
+        <input class="b-input b-input_text" type="text" placeholder="Имя файла" />
+
+        <div class="b-select">
+            <div class="b-select__trigger placeholder">Выберете папку</div>
+
+            <div class="b-select__option">
+                <ul class="b-tree">
+                    <li>
+                        <span><i class="b-icon b-icon_folder"></i>Мои документы</span>
+                        <ul>
+                            <li class="b-tree__item">
+                                <span><i class="b-icon b-icon_file"></i>File_1.txt</span>
+                            </li>
+                            <li>
+                                <span><i class="b-icon b-icon_folder"></i>Папка 1</span>
+                                <ul>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_2.pdf</span>
+                                    </li>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_3.pdf</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span><i class="b-icon b-icon_folder"></i>Папка 1</span>
+                                <ul>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_2.txt</span>
+                                    </li>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_3.txt</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span><i class="b-icon b-icon_folder"></i>Папка 1</span>
+                                <ul>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_2.txt</span>
+                                    </li>
+                                    <li class="b-tree__item">
+                                        <span><i class="b-icon b-icon_file"></i>File_3.txt</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="b-select__folder-add"><i class="b-icon b-icon_folder"></i></div>
+                <div class="b-select__folder-choice"><i class="b-icon b-icon_folder"></i></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
