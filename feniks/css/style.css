@@ -363,6 +363,11 @@ ul {
   transition-duration: .6s;
   transition-timing-function: ease;
 }
+@media (max-width: 414px) {
+  .b-modal {
+    width: 90%;
+  }
+}
 .b-modal.show {
   opacity: 1;
   visibility: visible;
