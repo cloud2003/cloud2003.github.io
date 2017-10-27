@@ -1,0 +1,1447 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ARToken by Cappasity</title>
+    <meta http-equiv="content-language" content="ru">
+    <meta property="og:url" content="https://artoken.io/ru/">
+    <meta property="og:title" content="ARToken by Cappasity">
+    <meta property="og:description" content="Decentralized AR/VR ecosystem for 3D content exchange">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artoken.io/assets/img/logo-share.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://artoken.io/assets/scss/app-1f90b9f1db.css">
+    <link rel="stylesheet" href="css/restyle.css">
+
+    <!--<script src="https://offershub.ru/js/public/artoken_oh.js"></script>-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/init.js"></script>
+</head>
+<body>
+<nav id="global-navigation" class="global-navigation">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="small-12 medium-12 large-3 cell logo">
+                <a href="/ru/">
+                    <img src="https://artoken.io/assets/img/logo.svg" alt="ARToken by Cappasity" width="240" height="41">
+                </a>
+            </div>
+            <div class="small-12 medium-12 large-9 cell">
+                <div class="title-bar" style="display:none;" data-responsive-toggle="example-menu" data-hide-for="large">
+                    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                    <ul class="dropdown menu for-small-size hide-for-large" data-dropdown-menu data-options="disableHover:true;closingTime:5000;clickOpen:true;">
+                        <li>
+                            <a class="has-icon"><span class="icon ru"></span> Рус</a>
+                            <ul class="menu lang-ru">
+                                <li class="item-en"><a href="/index.html?lang=en-US" class="has-icon"><span class="icon en"></span> Eng</a></li>
+                                <li class="item-cn"><a href="/index.html?lang=zh-CN" class="has-icon"><span class="icon cn"></span> 中文</a></li>
+                                <li class="item-ru"><a href="/index.html?lang=ru-RU" class="has-icon"><span class="icon ru"></span> Рус</a></li>
+                                <li class="item-ko"><a href="/index.html?lang=ko-KR" class="has-icon"><span class="icon ko"></span> 한국어</a></li>
+                                <li class="item-jp"><a href="/index.html?lang=ja-JP" class="has-icon"><span class="icon jp"></span> 日本語</a></li>
+                                <li class="item-po"><a href="/index.html?lang=pt-PT" class="has-icon"><span class="icon po"></span> Por</a></li>
+                                <li class="item-es"><a href="/index.html?lang=es-ES" class="has-icon"><span class="icon es"></span> Esp</a></li>
+                                <li class="item-fr"><a href="/index.html?lang=fr-FR" class="has-icon"><span class="icon fr"></span> Fra</a></li>
+                                <li class="item-de"><a href="/index.html?lang=de-DE" class="has-icon"><span class="icon de"></span> De</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="title-bar-title">Menu</div>
+                </div>
+                <div class="top-bar" id="example-menu">
+                    <div class="top-bar-right">
+                        <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;closingTime:5000;clickOpen:true;">
+                            <li><a href="https://blog.artoken.io/" target="_blank" rel="noopener noreferrer">Блог</a></li>
+                            <li><a href="https://cappasity.com/" target="_blank" rel="noopener noreferrer">Наша технология</a></li>
+                            <li><a href="/whitepaper/" target="_blank" class="has-pdf">White Paper</a></li>
+                            <li><a href="/one-pager/" target="_blank" class="has-pdf">One-pager</a></li>
+                            <li><a href="/howey-test/" target="_blank" class="has-pdf">Тест Хоуи</a></li>
+                            <li><a href="/ru/faq.html">FAQ</a></li>
+                            <li class="show-for-large">
+                                <a class="has-icon"><span class="icon ru"></span> Рус</a>
+                                <ul class="menu lang-ru">
+                                    <li class="item-en"><a href="/index.html?lang=en-US" class="has-icon"><span class="icon en"></span> Eng</a></li>
+                                    <li class="item-cn"><a href="/index.html?lang=zh-CN" class="has-icon"><span class="icon cn"></span> 中文</a></li>
+                                    <li class="item-ru"><a href="/index.html?lang=ru-RU" class="has-icon"><span class="icon ru"></span> Рус</a></li>
+                                    <li class="item-ko"><a href="/index.html?lang=ko-KR" class="has-icon"><span class="icon ko"></span> 한국어</a></li>
+                                    <li class="item-jp"><a href="/index.html?lang=ja-JP" class="has-icon"><span class="icon jp"></span> 日本語</a></li>
+                                    <li class="item-po"><a href="/index.html?lang=pt-PT" class="has-icon"><span class="icon po"></span> Por</a></li>
+                                    <li class="item-es"><a href="/index.html?lang=es-ES" class="has-icon"><span class="icon es"></span> Esp</a></li>
+                                    <li class="item-fr"><a href="/index.html?lang=fr-FR" class="has-icon"><span class="icon fr"></span> Fra</a></li>
+                                    <li class="item-de"><a href="/index.html?lang=de-DE" class="has-icon"><span class="icon de"></span> De</a></li>
+                                </ul>
+                            </li>
+                            <li class="hide-for-large telegram-chat">
+                                <a href="https://t.me/artoken" target="_blank" id="tgbody"><img src="https://artoken.io/assets/img/social/icon__telegram-2.svg" alt="" width="20">Напишите нам в Telegram!</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div id="big-hero" class="boy">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-10 large-6 cell">
+                <div class="big-hero__title">
+                    Децентрализованная экосистема для AR/VR и 3D-контента
+                </div>
+                <ul class="social">
+                    <li><a class="icon telegram" href="https://t.me/artoken" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon facebook" href="https://www.facebook.com/cappasity" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon twitter" href="https://twitter.com/cappasity" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon in" href="https://www.linkedin.com/company-beta/3773119/" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon tube" href="https://www.youtube.com/channel/UCRCSGdmb2ClX-3P9A6oXkAw" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon bitcoin" href="https://s.artoken.io/8" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon github" href="https://github.com/CappasityTech" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon reddit" href="https://www.reddit.com/r/ARToken_by_Cappasity/" target="_blank" rel="noopener noreferrer"> </a></li>
+                </ul>
+
+                <a href="https://t.me/artoken" target="_blank" rel="noopener noreferrer" class="big-hero__link">Есть вопросы? Задайте их в нашем <img src="https://artoken.io/assets/img/social/icon__telegram-2.svg" alt="" width="20" height="20"> Telegram канале.</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="join-white-list section-shadow">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-10 medium-offset-1 large-8 large-offset-2 cell text-center">
+                <form name="apply-wl-inline" class="subscribe-form-new" id="subscribe-wl-inline">
+                    <h1 class="padding-bottom">Public Sale is LIVE - Join now! Don't miss 20% maximum bonus</h1>
+                    <div id="clockdiv">
+                        <div class="item"><span class="num days"></span><div class="smalltext">Дней</div></div>
+                        <div class="item"><span class="num hours"></span><div class="smalltext">Часов</div></div>
+                        <div class="item"><span class="num minutes"></span><div class="smalltext">Минут</div></div>
+                        <div class="item"><span class="num seconds"></span><div class="smalltext">Секунд</div></div>
+                    </div>
+
+                    <div class="desc no-margin">
+                        <p>ARToken will be listed on HitBTC right after the end of Phase 1. Another exchange will be announced later.</p>
+                    </div>
+                    <input name="type" type="hidden" value="wl" />
+                    <div class="input-group v2 yellow">
+                        <input type="submit" class="button large g-recaptcha for-valid" data-sitekey="6Lfe2DQUAAAAANYhH8PSiiL2GyC2EcqXeWSa8S1G" data-callback="artoken.onSubscribeSubmitWhitelist" value="Купить ARTokens" data-track-category="Whitelist Application" data-track-label="Applied" data-track-type="Buy Tokens Button">
+                        <div class="we-accept">
+                            Мы принимаем: <img src="https://artoken.io/assets/img/icon__etc.svg" alt="" width="11" height="18"> ETH <img src="https://artoken.io/assets/img/icon__btc.svg" alt="" width="11" height="18"> BTC
+                        </div>
+                    </div>
+                    <div id="statistics" style="display: none;">
+                        <div class="statistics__container statistics__icon_user">
+                            <span class="statistics__value" id="totalUsers"></span>
+                            <p class="statistics__title">Пользователи</p>
+                        </div>
+                        <div class="statistics__container statistics__icon_contributors">
+                            <span class="statistics__value" id="totalContributors"></span>
+                            <p class="statistics__title">Инвесторы</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container rating">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-4 cell rating__item">
+                <a href="http://icorating.com/project/390/Artoken" target="_blank">
+                    <img src="https://artoken.io/assets/img/icon__hype.png" alt="">
+                    <p><b>High</b> <span>hype-score</span></p>
+                </a>
+            </div>
+
+            <div class="medium-4 cell rating__item">
+                <a href="http://icorating.com/project/390/Artoken" target="_blank">
+                    <img src="https://artoken.io/assets/img/icon__risk.png" alt="">
+                    <p><b>Low</b> <span>risk-score</span></p>
+                </a>
+            </div>
+
+            <div class="medium-4 cell rating__item">
+                <a href="http://icorating.com/project/390/Artoken" target="_blank">
+                    <img src="https://artoken.io/assets/img/icon__hype.png" alt="">
+                    <p><b>Positive</b> <span>in-depth Rating</span></p>
+                </a>
+            </div>
+
+            <div class="large-12 cell rating__item bottom">
+                <div class="block">
+                    <span>Rated by <a href="http://icorating.com/project/390/Artoken" target="_blank" rel="nofollow noreferrer">icorating.com</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="journey section-space-top">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="medium-12">
+                <h1 class="padding-bottom">Наша история</h1>
+            </div>
+        </div>
+        <div class="grid-x align-top journey-list">
+            <div class="small-12 large-2 item done">
+                <div class="name">2013</div>
+                <div class="desc">Cappasity<br> основана в<br> г. Санта Клара<br></div>
+            </div>
+            <div class="small-12 large-2 item done">
+                <div class="name">Начиная с 2014</div>
+                <div class="desc">Привлекли $1.8M<br> от бизнес ангелов <br />&zwnj;</div>
+            </div>
+            <div class="small-12 large-2 item done">
+                <div class="name">Январь 2017</div>
+                <div class="desc">Запущена<br> платформа и ПО<br> для 3D оцифровки</div>
+            </div>
+            <div class="small-12 large-2 item">
+                <div class="name">25 октября 2017</div>
+                <div class="desc">Запуск 1ой фазы продажи токенов <br> $30M</div>
+            </div>
+            <div class="small-12 large-2 item">
+                <div class="name">1 кв. 2018</div>
+                <div class="desc">120 дней с конца фазы <br>1 - старт фазы 2 продажи<br />&zwnj;</div>
+            </div>
+            <div class="small-12 large-2 item">
+                <div class="name">Что дальше?</div>
+                <div class="desc">Децентрализованная система AR/VR/3D<br> №1 в мире</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="watch-the-video" class="our-vision2 section-space-top">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 large-4 cell left">
+                <h1 class="padding-bottom">Наши цели</h1>
+                <h3>Развитие и распространение AR/VR-технологий</h3>
+            </div>
+            <div class="medium-12 large-8 cell right">
+                <p>Мы считаем, что создатели контента будут играть решающую роль в AR/VR-революции. Вот почему мы решили создать первую в мире платформу для создания, аренды и продажи 3D-контента с блокчейн-инфраструктурой. Мы стремимся обеспечить надежное децентрализованное хранение материалов, защищенных авторским правом, и возможность обмена контентом в AR/VR-экосистеме.</p>
+            </div>
+            <div class="medium-12 cell center">
+                <div class="responsive-embed widescreen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uj9SH2VQQz4?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen showinfo=0></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x logos">
+            <div class="small-6 align-middle medium-3 cell">
+                <a href="https://www.huffingtonpost.com/entry/59ed1990e4b02c6e3c609c28" target="_blank" rel="noopener noreferrer">
+                    <img src="https://artoken.io/assets/img/logos/huffingtonpost.png" alt="">
+                </a>
+            </div>
+            <div class="small-6 align-middle medium-3 cell">
+                <a href="https://venturebeat.com/2017/09/26/how-mixed-reality-and-blockchain-will-work-together/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://artoken.io/assets/img/logos/vb.png" alt="">
+                </a>
+            </div>
+            <div class="small-6 align-middle medium-3 cell">
+                <a href="https://cointelegraph.com/news/new-platform-leverages-blockchain-infrastructure-to-create-rent-sell-3d-content" target="_blank" rel="noopener noreferrer">
+                    <img src="https://artoken.io/assets/img/logos/logo-placeholder.png" alt="">
+                </a>
+            </div>
+            <div class="small-6 align-middle medium-3 cell">
+                <a href="https://www.forbes.com/sites/rogeraitken/2017/08/17/how-the-blockchain-is-disrupting-the-art-economy-as-we-know-it/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://artoken.io/assets/img/logos/forbes.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="learn-all section-space-top">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell text-center">
+                <h1 class="title">Learn all about ARToken</h1>
+                <p>Or scroll down for a brief overview</p>
+            </div>
+            <div class="medium-4 cell learn-all__item">
+                <div class="cover">
+                    <a href="/whitepaper" class="button large" target="_blank" rel="noopener noreferrer">Download PDF</a>
+                    <img src="https://artoken.io/assets/img/wp.jpg" alt="">
+                </div>
+                <div class="desc"><b>White Paper</b></div>
+            </div>
+            <div class="medium-4 cell learn-all__item">
+                <div class="cover">
+                    <a href="/one-pager/" class="button large" target="_blank" rel="noopener noreferrer">Download PDF</a>
+                    <img src="https://artoken.io/assets/img/op.jpg" alt="">
+                </div>
+                <div class="desc"><b>One-pager</b></div>
+            </div>
+            <div class="medium-4 cell learn-all__item">
+                <div class="cover">
+                    <a href="https://github.com/CappasityTech/ARToken/tree/master/contracts" class="button large long" target="_blank">View code on GitHub</a>
+                    <img src="https://artoken.io/assets/img/smart-contract.png" alt="">
+                </div>
+                <div class="desc"><b>Smart Contract</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="ecosystem-scheme section-space-top">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x align-middle">
+                <div class="large-6 cell show-for-large left">
+                    <img src="https://artoken.io/assets/img/scheme_ru.png" alt="" class="scheme">
+                </div>
+                <div class="large-6 cell right">
+                    <h2 class="padding-bottom">Схема <br /> AR/VR-экосистемы<br /> Cappasity</h2>
+                    <img src="https://artoken.io/assets/img/scheme_ru.png" alt="" class="scheme hide-for-large">
+                    <p>Экосистема Cappasity Ecosystem предназначена для тех, кто хочет продавать или покупать AR/VR и 3D-контент. Экосистема включает вспомогательные элементы: рынок, блокчейн и инфраструктуру системы хранения. Децентрализованную инфраструктуру хранения предоставляют сторонние поставщики услуг. Мы также предлагаем отдельную «песочницу» для тестирования AR/VR/3D-контента. Мы планируем поддерживать разработчиков AR/VR и активных участников сообщества за счет специально выделенных на это средств в AR.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blockchain section-space-top">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x align-top">
+                <div class="medium-12 large-4 cell">
+                    <h2 class="padding-bottom">What are the benefits of blockchain as it used in the Cappasity Ecosystem?</h2>
+                </div>
+                <div class="medium-6 large-4 cell blockchain__item left">
+                    <p><b class="uppercase">Decentralized and trustless copyright storage</b></p>
+                    <p>All content and its exchange details are immutably stored in the blockchain, which resembles a Bittorrent-like system.</p>
+                    <p>Each content file is assigned with an ID or a hash to prevent any copyright infringement. All hashes of all the files are listed in the blockchain and cannot be changed. Once a content transaction is done, all its details will be processed according to a smart contract protocol and cannot be reversed retrospectively. For instance, the system won’t allow a malefactor to sell someone else’s file by claiming it as their own, or rent a file for free when the rental period has already come to an end.</p>
+                    <p>Therefore, when exchanging content, buyers and sellers are guaranteed that their copyrights are fully protected.</p>
+                </div>
+                <div class="medium-6 large-4 cell blockchain__item right">
+                    <p><b class="uppercase">Nearly free, instant and transparent global financial transactions</b></p>
+                    <p>Firstly, thanks to the blockchain, when 3D content is being sold via the marketplace, it is sold at the seller’s price and the Ecosystem participants are charged close to no fees. Secondly, blockchain technology allows instant and transparent financial transactions all over the globe. The content owner receives payments for each transaction very quickly and without failure.</p>
+                    <p>Overall, the blockchain helps us create a secure and convenient environment for 3D content production and mass distribution. Since high-quality and accessible content is the driving force behind the development of AR/VR technologies, we believe that the blockchain-based AR/VR Ecosystem will bring the AR/VR industry to a new level of its development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="will-shake section-space-top infograph background-white">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x align-middle">
+                <div class="medium-12 large-4 cell">
+                    <h2>Рыночный потенциал AR/VR составляет порядка 80 млрд долл. США</h2>
+                </div>
+                <div class="medium-12 large-8 cell">
+                    <p>Определенно, AR технологии будут играть ключевую роль в электронной и мобильной торговле в будущем. Но это не единственная область, которая может радикально измениться в результате развития AR/VR-технологий. По прогнозам Goldman Sachs, рынок AR/VR к 2025 г. будет составлять $35 млрд, при этом 60% прибыли будет поступать от потребителей.</p>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+                <div class="medium-12 cell">
+                    <div class="hide-for-large infograph-message">
+                        <p><b>Note:</b> scroll right to view the full infographic.</p>
+                    </div>
+                    <div class="scroll">
+                        <div class="balls">
+                            <div class="big-ball"></div>
+                            <div class="fl-group balls-text">
+                                <div class="b-text">
+                                    <div class="name">Здравоохранение</div>
+                                    <div class="money">$5,1 млрд</div>
+                                    <div class="users">3,4 млн чел.</div>
+                                    <div class="line-ball"></div>
+                                </div>
+                                <div class="b-text">
+                                    <div class="name">Розница</div>
+                                    <div class="money">$1,6 млрд</div>
+                                    <div class="users">32 млн чел.</div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="b-text">
+                                    <div class="name">Образование</div>
+                                    <div class="money">$0,7 млрд</div>
+                                    <div class="users">15 млн чел.</div>
+                                    <div class="line last"></div>
+                                </div>
+                            </div>
+                            <div class="fl-group balls-text-middle fl-align-center">
+                                <div class="b-text mobile-pad">
+                                    <div class="group">
+                                        <div class="name">Видеоигры</div>
+                                        <div class="money">$11.6 млрд</div>
+                                        <div class="users">216 млн чел.</div>
+                                    </div>
+                                </div>
+                                <div class="b-text text-ball">
+                                    <div class="group">
+                                        <div class="name">Трансляции</div>
+                                        <div class="money">$4,1 млрд</div>
+                                        <div class="users">95 млн чел.</div>
+                                    </div>
+                                </div>
+                                <div class="b-text text-ball">
+                                    <div class="group">
+                                        <div class="name">Развлечения</div>
+                                        <div class="money">$3,2 млрд</div>
+                                        <div class="users">79 млн чел.</div>
+                                    </div>
+                                </div>
+                                <div class="b-ball"></div>
+                                <div class="b-ball"></div>
+                            </div>
+                            <div class="fl-group balls-text-bottom">
+                                <div class="b-text">
+                                    <div class="line-ball"></div>
+                                    <div class="name">Инжиниринг</div>
+                                    <div class="money">$4,7 млрд</div>
+                                    <div class="users">0,7 млн чел.</div>
+                                </div>
+                                <div class="b-text">
+                                    <div class="line-ball2"></div>
+                                    <div class="name">Недвижимость</div>
+                                    <div class="money">$2,6 млрд</div>
+                                    <div class="users">0,3 млн чел.</div>
+                                </div>
+                                <div class="b-text">
+                                    <div class="line-ball2"></div>
+                                    <div class="name">Военное дел</div>
+                                    <div class="money">$1,4 млрд</div>
+                                    <div class="users">0,7 млн чел.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x quotes-list">
+                <div class="medium-12 large-6 cell">
+                    <div class="quotes-list__item">
+                        <p>На мой взгляд, AR — такая же прорывная идея, как и смартфон. Смартфоны предназначены для всех, iPhone создан не для какой-то одной группы людей, страны или рынка; он создан для всех. Я считаю, что AR настолько же глобальна. Меня восхищает мысль о том, сколько всего можно сделать и насколько лучше благодаря этому станет наша жизнь. И насколько интереснее.</p>
+                        <p class="name">Тим Кук</p>
+                        <p class="role">Генеральный директор Apple, интервью с The Independent</p>
+                    </div>
+                </div>
+
+                <div class="medium-12 large-6 cell">
+                    <div class="quotes-list__item">
+                        <p>Сейчас очень важно, чтобы создатели контента работали сообща, потому что благодаря работе технологических компаний и отрасль, и потребители вышли на этот этап. Но сейчас, я думаю, движущей силой прогресса станут создатели контента.</p>
+                        <p class="name">Нил Грэм</p>
+                        <p class="role">Исполнительный продюсер, Sky VR Studios, CITI</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-x grid-margin-x quotes-list">
+                <div class="medium-12 large-6 cell">
+                    <div class="quotes-list__item">
+                        <p>Постоянно появляются более развитые и функциональные инструменты познания мира. После видео следующим логическим шагом стала виртуальная реальность с полным погружением.</p>
+                        <p class="name">Марк Цукерберг</p>
+                        <p class="role">Генеральный директор Facebook, выступление на Oculus Connect 2</p>
+                    </div>
+                </div>
+
+                <div class="medium-12 large-6 cell">
+                    <div class="quotes-list__item">
+                        <p>Контент стал основой для запуска множества успешных технологических продуктов. Наши респонденты уверены, что теперь высококачественный и разнообразный контент окажется ключевым фактором в развитии AR/VR-индустрии.</p>
+                        <p class="name">Кирк Содерквист</p>
+                        <p class="role">Партнер, Perkins Coie</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+<section class="roadmap section-space-top">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell">
+                <h2 class="title-block"><span>Дорожная карта</span></h2>
+                <div class="scroll">
+                    <div class="roadmap-container">
+                        <div class="item time top">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">2013</div>
+                                <div class="desc">Основана компания<br>Cappasity Inc.</div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item bottom time">
+                            <div class="line-2 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 27">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M41.5 0v13.5H.5V27"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">2014</div>
+                                <div class="desc">Исследования<br>по упрощению создания<br>3D-контента.</div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item time top">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">2016</div>
+                                <div class="desc">Бесплатное ПО Easy 3D Scan® для создания 3D-изображений, которое позволяет увеличить скорость цифровой обработки в 10 раз.</div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item bottom time">
+                            <div class="line-2 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 27">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M41.5 0v13.5H.5V27"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">2017</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Запуск платформы Cappasity: в 4 раза быстрее, поиск с <br> любого устройства, собственный 3D-формат.</li>
+                                        <li>Простое встраивание (вручную или с использованием API).</li>
+                                        <li>В декабре платформа Cappasity начнет принимать токены для оплаты.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item money top expand-control"><a href="#">Show the rest</a></div>
+                        <div class="item money top">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">1 кв. 2018</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Бесплатный SDK захвата 3D для мобильных устройств.</li>
+                                        <li>Захват 3D-изображений и 3D-голограмм для мобильных устройств.</li>
+                                        <li>Интеграция 3D-голограмм с Unity/UE.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item bottom money">
+                            <div class="line-2 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 27">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M41.5 0v13.5H.5V27"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">2 кв. 2018</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Рынок 3D/AR/VR-контента с использованием смарт-контрактов.</li>
+                                        <li>Интеграция 3D-голограмм с Apple ARKit.</li>
+                                        <li>Cappasity AI API: детальная аналитика поведения пользователей, интеграция CMS.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item money top">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">3 кв. 2018</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Бесплатный сканер<br>3D-аватар.</li>
+                                        <li>Решение по моделированию для AR/VR-устройств.</li>
+                                        <li>Решение по моделированию для<br>3D-принтеров.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item bottom nomargin money">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">4 кв. 2018</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Децентрализованное хранилище AR/VR/3D-контента.</li>
+                                        <li>Решение для бесплатной 3D-съемки недвижимости.</li>
+                                        <li>Решение по <br>3D-измерениям.</li>
+                                        <li>Система поиска <br>3D-контента.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="item money top expand">
+                            <div class="line-1 line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.25 27.75">
+                                    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M1.75 1v26"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">1 кв. 2019</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li>Децентрализованный рынок AR/VR/3D-приложений.</li>
+                                        <li>3D-съемка для дронов.</li>
+                                        <li>Фотограмметрия для мобильных устройств.</li>
+                                        <li>Децентрализованное решение для фотограмметрии на GPU.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sale-details section-space-top">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="large-2 cell">
+                <h2 class="title-block"><span>Информация о продаже токенов AR</span></h2>
+            </div>
+            <div class="large-4 cell sale-details__item">
+                <div><b>ARToken: </b>продуктовые токены (оценка в тесте Хоуи: 20).</div>
+                <div><b>Ограничение: </b>$50М. Ограничение 1ой фазы продажи - $30М.</div>
+                <div><b>Базовая цена токена AR/USD: </b>125 AR за $1.</div>
+                <div><b>Общее количество AR на продажу: </b>7 000 000 000.</div>
+                <div><b>Фактическое количество AR: </b>будет известно после окончания краудсейла (невыкупленные токены будут уничтожены).</div>
+                <div><b>Адрес смарт-контракта: </b>будет объявлен позднее.</div>
+                <div><b>Дополнительная эмиссия/майнинг: </b>нет.</div>
+            </div>
+            <div class="large-6 cell sale-details__item">
+                <div><b>Дата и время начала 1ой фазы продажи: </b>25 октября 2017 г., 13:00 UTC.</div>
+                <div><b>Дата окончания 1ой фазы продажи: </b>через 28 дней после начала продажи или при достижении лимита.</div>
+                <div><b>Дата и время начала 2ой фазы продажи: </b>120 дней с даты окончания 1ой фазы продажи токенов.</div>
+                <div><b>Валюта, которую мы принимаем: </b>BTC ETH LTC DASH</div>
+                <div><b>Минимальная сумма покупки: </b>мы не принимаем и не обрабатываем платежи менее $30. Транзакции на меньшую сумму будут проигнорированы.</div>
+                <div><b>Бонусы: </b>Бонус первой фазы продажи зависит от объема покупки: $100K-$300K - 5%, &gt;$300K - 10% и от собранной на момент взноса суммы:<br> - Первые $10M (РАУНД 1) – бонус 10% <br> - Вторые $10M (РАУНД 2) – бонус 5%<br> - Третие $10M (РАУНД 3) – бонус 0%<br> Эти бонусы независимые и могут суммироваться.</div>
+                <div>Бонусы второй фазы, также будут зависеть от собранной в момент покупки суммы:<br> - Первые $10M (РАУНД 1) - бонус 10% <br> - Вторые $10M (РАУНД 2) - бонус 0%<br></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="charts background-white">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 large-6 cell">
+                <h2 class="padding-bottom">Распределение токенов</h2>
+                <p>Чтобы поддержать активных создателей контента и разработчиков ПО для AR/VR/3D, мы планируем создать «Премиальный фонд» и «Фонд AR/VR-инноваций». После завершения продаж токенов мы направим 10% полученных средств на премии создателям контента, а 20% — на поддержку инноваций.</p>
+            </div>
+            <div class="medium-12 large-6 cell">
+                <div class="charts-cont">
+                    <div class="pie-charts">
+                        <div class="row charts-row">
+                            <div class="">
+                                <div class="chart first-chart">
+                                    <div class="chart-text">
+                                        <div class="text">Покупатели</div>
+                                        <div class="percents">70%</div>
+                                    </div>
+                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="260.4" height="260" viewBox="0 0 260.4 260">
+                                        <style>.st0{fill:#193666}.st1{fill:#0e57a0}.st2{fill:#2c7cdb}</style>
+                                        <path class="st0" d="M223.6 220.2l.2-.2c.3-.3.5-.6.8-.9 5.7-6.1 10.9-12.9 15.4-20 27.8-43.7 27.3-97.9-2.3-141.8C197.5-.6 118.5-16 59.6 22.7-.4 62-16.9 143 22.5 203c25.5 37.7 66.1 58.3 110.3 57 18.3-.3 35.7-4.5 51.3-11.7 14.9-6.6 28-15.9 39.5-28.1z"></path>
+                                        <path class="st1" d="M130 130l20.3 128.3c-51 8.1-99.2-12.8-128-55.7L130 130z"></path>
+                                        <path class="st2" d="M130 130l102.4 80c-21.2 27.1-48.7 43-82.7 48.3L130 130z"></path>
+                                        <path class="st0" d="M130 130L22.5 203C-16.9 143-.4 62 59.6 22.7 118.5-16 197.5-.6 237.7 57.3c32.1 47.6 30 107.4-5.3 152.7L130 130z">
+                                            <circle class="st0" cx="130.5" cy="131.2" r="128.8"></circle>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-xsm-12">
+                                <div class="chart second-chart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.48 261.22">
+                                        <path d="M130.89 130.59L6.69 90.24C24.52 35.36 73.19 0 130.89 0v130.59z" fill="#5bc0ce"></path>
+                                        <path d="M130.89 130.59L6.69 170.95c-8.92-27.44-8.92-53.27 0-80.71z" fill="#2c97de"></path>
+                                        <path d="M130.89 130.59L188.14 248a130.59 130.59 0 0 1-174.63-60.16 137.61 137.61 0 0 1-6.83-16.89z" fill="#136db7"></path>
+                                        <path d="M130.89 130.59V0a130.59 130.59 0 0 1 130.59 130.59c0 51.93-26.67 94.61-73.35 117.38z" fill="#124c91"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charts-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="262.5">
+                                <path fill-rule="evenodd" stroke="#CCC" fill="#FFF" d="M23 261.5c-8.008 0-14.5-6.431-14.5-14.364V141.207c0-2.681-7.5-9.555-7.5-9.555s7.5-7.064 7.5-9.84V15.364C8.5 7.431 14.992 1 23 1"></path>
+                            </svg>
+                        </div>
+                        <div class="charts-text-group">
+                            <div class="charts-text fl-group">
+                                <div class="chart-text first-pie">
+                                    <div class="percents">18%</div>
+                                    <div class="text">Капитал<br>основателей</div>
+                                </div>
+                                <div class="chart-text first-pie">
+                                    <div class="percents">12%</div>
+                                    <div class="text">Ранние<br>покупатели</div>
+                                </div>
+                                <div class="chart-text second-pie">
+                                    <div class="percents">20%</div>
+                                    <div class="text">Фонд<br>AR/VR<br>инноваций</div>
+                                </div>
+                                <div class="chart-text second-pie">
+                                    <div class="percents">10%</div>
+                                    <div class="text">Премиальный<br>фонд</div>
+                                </div>
+                            </div>
+                            <div class="charts-abs">
+                                <div class="chart-text">
+                                    <div class="percents">43%</div>
+                                    <div class="text">Разработка<br>ПО</div>
+                                </div>
+                                <div class="chart-text">
+                                    <div class="percents">27%</div>
+                                    <div class="text">Продажи <br>и маркетинг</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://artoken.io/assets/img/charts/chart__ru.png" alt="" class="pic-chart">
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="large-6 cell left">
+                <p><b>«Фонд AR/VR-инноваций»</b> предназначен для выплат премий разработчикам наиболее перспективных приложений. Мы не будем проводить специальные конкурсы с этой целью, оценка приложений осуществляется постоянно. Количество премий зависит от объема доступных средств.</p>
+            </div>
+            <div class="large-6 cell right">
+                <p><b>«Премиальный фонд»</b> предназначен для выплат активным создателям контента. Наиболее активные создатели и авторы будут регулярно получать вознаграждения. Кроме того, премии будут получать модераторы и активные члены сообщества. Распределение показано на диаграмме.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-company section-space-top">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+                <h1 class="padding-bottom">О компании <a href="https://cappasity.com/" target="_blank" rel="noopener noreferrer">Cappasity</a></h1>
+            </div>
+            <div class="large-7 cell">
+                <p>омпания Cappasity основана в 2013 г. Ее основная задача — разработка технологических стандартов и простой масштабируемой платформы для создания, встраивания и анализа 3D и AR/VR-контента.</p>
+                <p>С 2014 г. Cappasity сотрудничает с Intel. Мы разработали для 3D-камер Intel® RealSense™ программу 3D-сканирования Easy 3D Scan™, которая представлена в Intel RealSense Showcase. С 2014 г. Cappasity привлекла более $1,8 млн венчурных инвестиций и в январе 2017 г. запустила собственную платформу и решение по созданию 3D-контента.</p>
+                <p>В настоящее время платформа ежемесячно обеспечивает более 700 тыс. показов 3D-контента. Компания также предлагает комплексное решение по созданию контента для виртуальной (VR) и дополненной (AR) реальности. Платформа открыта для разработчиков, использующих технологии Unity, Unreal Engine и Apple ARKit.</p>
+            </div>
+            <div class="large-5 cell">
+                <p>Основатели компании более 15 лет работают с 3D-технологиями и обладают большим опытом управления в сфере IT. Среди наших сотрудников есть специалисты в сфере машинного зрения, облачных технологий, разработки 3D-движков для приложений, создания трехмерных мобильных и видеоигр.</p>
+                <p>Компания Cappasity участвовала в <a href="https://cappasity.com/cappasity-joined-plug-play-retail-accelerator/" target="_blank" rel="noopener noreferrer">седьмой программе бизнес-акселератора Plug and Play Retail в Саннивейл</a> получила приглашение присоединить к Dec 2017 Batch акселератора Lafayette Plug and Play в Париже.</p>
+                <p>Подробнее: <a href="https://www.cappasity.com/" target="_blank" rel="noopener noreferrer">cappasity.com</a></p>
+                <div class="awards">
+                    <a href="http://plugandplaytechcenter.com/" target="_blank" rel="noopener noreferrer"><img src="https://artoken.io/assets/img/logos/plug_and_play.jpg" alt=""></a>
+                    <a href="https://realsenseapp.intel.com/apps/easy-3d-scan/" target="_blank" rel="noopener noreferrer"><img src="https://artoken.io/assets/img/logos/intel.png" alt=""></a>
+                    <a href="https://cta.tech/" target="_blank" rel="noopener noreferrer"><img src="https://artoken.io/assets/img/logos/cta.jpg" alt=""></a>
+                    <a href="http://lafayetteplugandplay.com/" target="_blank" rel="noopener noreferrer"><img src="https://artoken.io/assets/img/logos/lafayette.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x about-company__team">
+            <div class="large-3 cell">
+                <h2 class="title-block"><span>Team</span></h2>
+                <div class="team-more">+12 more</div>
+            </div>
+            <div class="large-9 cell">
+                <div class="team-person">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/kosta.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Костя Попов</div>
+                            <div class="role">CEO</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/popovks" target="_blank" rel="noopener noreferrer"></a>
+                        </div>
+                    </div>
+                    <div class="right">Первую компанию Костя основал в 2005 г. За время существования компании были выпущены программные продукты для PC, игровых приставок, мобильных устройств, а также SaaS решения для бизнеса. В 2016 г. он был назван одним из лучших инноваторов компании Intel по региону Северная Америка.</div>
+                </div>
+
+                <div class="team-person">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/alex.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Алекс Чегаев</div>
+                            <div class="role">CTO</div>
+                        </div>
+                    </div>
+                    <div class="right">Технический директор и сооснователь Cappasity. Обладает большим опытом работы с 3D-технологиями. Работал с Костей в нескольких проектах по разработке межплатформенного ПО в роли технического руководителя.</div>
+                </div>
+
+                <div class="team-person">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/marianna.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Марианна <br />Альшина</div>
+                            <div class="role">CBDO</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/malshina" target="_blank" rel="noopener noreferrer"></a>
+                        </div>
+                    </div>
+                    <div class="right">Директор по развитию бизнеса и сооснователь Cappasity. Специализируется в digital-маркетинге и развитии бизнеса. Марианна пришла в команду в 2015 г. и занимается укреплением взаимоотношений с основными партнерами компании.</div>
+                </div>
+
+                <div class="team-person">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/natalie.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Натали Рэйс</div>
+                            <div class="role">CSO</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/natalie-reyes-9315a989" target="_blank" rel="noopener noreferrer"></a>
+                        </div>
+                    </div>
+                    <div class="right">Будучи директором по продажам, Натали занимается международным развитием компании на операционном уровне. Она отвечает за развитие команды продаж, обеспечение качества обслуживания клиентов и выход на новые рынки.</div>
+                </div>
+
+                <div class="team-more">+12 more</div>
+            </div>
+        </div> <div class="grid-x grid-margin-x about-company__team">
+        <div class="large-3 cell">
+            <h2 class="title-block"><span>Консультанты</span></h2>
+        </div>
+        <div class="large-9 cell">
+            <div class="row align-top">
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/drake.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">David Drake</div>
+                            <div class="role">Chairman at LDJ Capital</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/ldjcapital/" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">David Drake is the Chairman of LDJ Capital, a family office; Victoria Partners, LDJ Real Estate Group; Drake Hospitality Group; and, The Soho Loft Media Group. LDJ Capital&#x27;s extended network of funds of funds and hedge funds manages 1.5 trillion USD in assets. David previously represented the US Commerce Department at the EU and he spoke at the UK Parliament. Mr. Drake’s access to 100,000 investors is maintained through his media holding investment The Soho Loft Media Group which has produced and sponsored over 1500+ global finance conferences since 2002. David Drake is actively involved in the Crypto community as a speaker and has helped ICO firms he advised raise $101M in funding.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/millet.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Jonathan Millet</div>
+                            <div class="role">CEO NewsBTC</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/jonathan-millet-0a37179" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Bitcoin Investor and a Hardcore crypto believer. Jonathan is a CEO of NewsBTC.com, one of the leading Bitcoin News outlets, founded in October 2013 with the goal of educating and informing those curious about the virtual currency that is Bitcoin. NewsBTC.com publishes insightful news articles, interviews with industry experts and extra bits of information to help better understand the Bitcoin ecosystem and share the awesome start-ups and projects running on Bitcoin. NewsBTC’s coverage has been mentioned in the major business and technology outlets like TechCrunch, CNN, Forbes, Business Insider, and others.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/sagar.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Jayanand Sagar</div>
+                            <div class="role">CTO NewsBTC</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/jayanandsagar" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Jayanand is a seasoned Serial Entrepreneur with 7+ years track record of success. Crypto Investor and Tech Consultant, Jayanand is a Co-Founder of First Principles Ventures. He enjoys creating new products and is an expert in emerging technologies - blockchain and crypto industry are his new experimental grounds. Jayanand is a CTO at NewsBTC.com and holds deep expertise in blockchain-based projects and specifically Bitcoin.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/holz.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Frank Holz</div>
+                            <div class="role">Director / Member Of The Board Gawooni</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/frankholz" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Frank Holz is a qualified economic engineer and a long serving consultant for companies such as Daimler-Benz, Mercedes-Benz and Mannesmann (today Vodafone). Since 1996 Frank Holz has been working in the games industry. He was Marketing Director of well-known, international game publishers such as Infogames and Atari. In 2008 he founded IEM Consulting, an internationally operating management consultancy focusing on the games industry. Frank Holz advises game developers, game publishers, multimedia entrepreneurs, branded insurers, investors, banks and governmental agencies worldwide. He has a very strong strategical background and stable international network within the gaming industry. Due to his numerous consulting projects for governmental agencies and game developers in Asia, Frank Holz has a huge business network in Korea, Japan, Hong Kong, China, Taiwan, Thailand and Singapore.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/anders.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Anders Larsson</div>
+                            <div class="role">Vice President and Head of Network Products, Ericsson. Co-founder LiveTourLAB</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/anders-larsson" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Anders has worked for two decades to create the emerging technologies of 2G, 3G, 4G, 5G and IOT in 10 different countries for Ericsson (NASDAQ: ERIC). Today, in 2017, there are 4.8 billion mobile broadband and 7.7 billion mobile subscriptions in total, exceeding the world population. Anders has held various CTO roles and the role of Vice President and Head of Practice for Mobile Broadband in Southeast Asia &amp; Oceania with billion dollar yearly sales responsibility. He holds his own patents. Since 11 years old, Anders has loved to code. He is the main developer of the LiveTourLAB open source framework and now passionate about bringing VR, Crypto and Green Technology to same scale as telecom.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/joakim.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Joakim Holmer</div>
+                            <div class="role">Co-founder LiveTourLAB</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/joakimholmer/" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">When Joakim completed the delivery of a 500 team member strong project, he gave a T-shirt to each of the 500 team members that said: “Everything is Possible”. This is Joakim. That project was the major delivery to AT&amp;T in California and THE BIG ONE for Ericsson (NASDAQ: ERIC) that year, delivered on time, which everyone stated was impossible. Joakim Holmer joined the Ericsson Group right after school and it was his passion for communication and travel that made Ericsson an easy choice. The initial years as mobile comms software engineer were followed by 15 years in various technical leadership positions around the world. Later Joakim has also worked with Software System Sales. With hunger to develop that included everything from Mobile App start-ups to RedHat, SAP and Cisco. Together with Anders he has started the next big venture. Let’s see where LiveTourLAB will take him next!</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/yu.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Yu Cao</div>
+                            <div class="role">Startup Explorer and Analyst at LVMH</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/yu-cao-9794a528" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Yu is working on startup sourcing at LVMH. She helps LVMH Group and Brands to identify and evaluate relevant startups for their businesses. She was directly involved in selecting startups for LVMH during Viva Technology 2016 &amp; 2017. Yu holds a Master in Management degree from ESSEC business school, one of the best business schools in France. Yu is originally from China. Her bi-cultural background gives her a good understanding of both European and Asian digital ecosystem.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/jim.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Jim Theberge</div>
+                            <div class="role">Director, Head of Product Management &amp; Sales Strategy, Advanced Advertising at Verizon</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/jim-theberge-321b159" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">An entrepreneurial, Emmy award-winning Advanced TV executive consistently recognized for innovation and market execution. A successful startup veteran (six startups -&gt; one IPO, three acquisitions) with numerous industry awards and firsts. First to launch a global connected TV advertising network with Samsung, Sony, Panasonic &amp; Toshiba.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/henry.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Henry Ines</div>
+                            <div class="role">Partner at DraperDragon Fund, Executive Director of Global Chamber® San Francisco</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/henryines" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Henry Ines is a global executive and trusted advisor with 20+ years of investment, business development, corporate finance, management consultancy &amp; cross border experiences. Henry currently serves as the Executive Director of Global Chamber® San Francisco, a member organization focused on helping leaders, executives and companies with cross border trade, investment and global expansion initiatives. Additionally, Henry is also a venture partner at DraperDragon Fund, a US-China venture capital firm based in Silicon Valley; serves as an advisor to multiple SF Bay area-based technology startups; and is a mentor at Google&#x27;s Launchpad Accelerator and StartupIndia. Prior to DraperDragon, Henry was a partner at DFJ Dragon Fund and DragonVenture, focusing on US-China and Southeast Asian early stage investment opportunities and advisory initiatives.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/friedler.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Mark Friedler</div>
+                            <div class="role">President, iCars</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/markfriedler/" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Mark is a serial entrepreneur, advisor and growth leader. He has a background in B2B cloud services, sales and marketing, games and entertainment. He was CEO of Gigex, the first cloud game download service, then founder/CEO of GameDaily.com, the world’s largest video games website and ad network and exited through AOL Time Warner’s acquisition. He’s founded 4 companies and been an executive at Oracle, TimeWarner/AOL and Philips. Recently, he was interim president of B2B rideshare company ICars and Senior Director at Oracle Marketing Cloud and Data Cloud. He was Managing Director of Teleworld, an interactive voice, TV and online services provider to MTV. Mark’s first business introduced chocolate chip cookies stores to Sweden. He also works with early stage founders at TechStars.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/jeff.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Jeff Smith</div>
+                            <div class="role">Entrepreneur in residence, Tech Futures Group</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/jeffreypetersmith" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Jeff Smith has spent over 30 years of domestic and international high technology sales, marketing, business development, corporate development and venture capital experience in multiple industry markets. Jeff was most recently with RBM Technologies, a leading cloud based retail software company that was successfully sold. Prior to RBM, Jeff was the Founding and Managing Partner of XcelR8 Partners that provided business development consulting services to accelerate revenue traction for development, marketing, and product line management at BlueCurve (acquired by Red Hat), Sybase, Technology Concepts (acquired by Bell Atlantic) and Unisys.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <img src="https://artoken.io/assets/img/team/leo.png" alt="">
+                        <div class="info fl-group fl-column">
+                            <div class="name">Leo Batalov</div>
+                            <div class="role">Partner at DLA Piper, Head of Emerging Growth Companies &amp; Venture Capital Russia &amp; CIS</div>
+                            <a class="icon-link icon-linked" href="https://www.linkedin.com/in/leo-batalov-445a663" target="_blank" rel="noopener noreferrer">icon</a>
+                        </div>
+                    </div>
+                    <div class="right">Leo Batalov advises on corporate finance transactions, mergers and acquisitions, venture capital transactions, private equity transactions and general corporate matters. He also has broad experience representing issuers, underwriters, trustees and servicers in public and private offerings of asset-backed securities as well as lenders and borrowers in a variety of debt finance transactions.</div>
+                </div>
+
+                <div class="team-person advisor columns medium-12 large-6 cell">
+                    <div class="left">
+                        <a href="https://www.dlapiper.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://artoken.io/assets/img/team/dla_piper.png" alt="">
+                        </a>
+                        <div class="info fl-group fl-column">
+                            <div class="name">DLA Piper</div>
+                            <div class="role">Legal advisor</div>
+                        </div>
+                    </div>
+                    <div class="right">DLA Piper is a global law firm with lawyers located in more than 40 countries throughout the Americas, Europe, the Middle East, Africa and Asia Pacific, positioning us to help clients with their legal needs around the world.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="activity section-space-top">
+    <div class="grid-container">
+        <div class="large-12 cell text-center">
+            <h1 class="padding-bottom">Our latest activity and R&amp;D</h1>
+        </div>
+        <div class="scroll">
+            <div class="wrapper">
+                <div class="large-12 cell">
+                    <div class="activity__item id-LdF6oO58mC8">
+                        <a href="https://www.youtube.com/watch?v=LdF6oO58mC8" data-youtube-id="LdF6oO58mC8" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-LdF6oO58mC8 > a {background-image: url(https://img.youtube.com/vi/LdF6oO58mC8/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-bzZKWlHzxrw">
+                        <a href="https://www.youtube.com/watch?v=bzZKWlHzxrw" data-youtube-id="bzZKWlHzxrw" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-bzZKWlHzxrw > a {background-image: url(https://img.youtube.com/vi/bzZKWlHzxrw/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-kF8umG6l4XM">
+                        <a href="https://www.youtube.com/watch?v=kF8umG6l4XM" data-youtube-id="kF8umG6l4XM" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-kF8umG6l4XM > a {background-image: url(https://img.youtube.com/vi/kF8umG6l4XM/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-m51_JbvUZDU">
+                        <a href="https://www.youtube.com/watch?v=m51_JbvUZDU" data-youtube-id="m51_JbvUZDU" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-m51_JbvUZDU > a {background-image: url(https://img.youtube.com/vi/m51_JbvUZDU/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-d8LlX4TCy50">
+                        <a href="https://www.youtube.com/watch?v=d8LlX4TCy50" data-youtube-id="d8LlX4TCy50" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-d8LlX4TCy50 > a {background-image: url(https://img.youtube.com/vi/d8LlX4TCy50/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-UIBYnVbWMxo">
+                        <a href="https://www.youtube.com/watch?v=UIBYnVbWMxo" data-youtube-id="UIBYnVbWMxo" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-UIBYnVbWMxo > a {background-image: url(https://img.youtube.com/vi/UIBYnVbWMxo/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-a7QS-kHzkIs">
+                        <a href="https://www.youtube.com/watch?v=a7QS-kHzkIs" data-youtube-id="a7QS-kHzkIs" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-a7QS-kHzkIs > a {background-image: url(https://img.youtube.com/vi/a7QS-kHzkIs/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-4Qlt0UfIaYw">
+                        <a href="https://www.youtube.com/watch?v=4Qlt0UfIaYw" data-youtube-id="4Qlt0UfIaYw" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-4Qlt0UfIaYw > a {background-image: url(https://img.youtube.com/vi/4Qlt0UfIaYw/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-0VJ0HtdGsDo">
+                        <a href="https://www.youtube.com/watch?v=0VJ0HtdGsDo" data-youtube-id="0VJ0HtdGsDo" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-0VJ0HtdGsDo > a {background-image: url(https://img.youtube.com/vi/0VJ0HtdGsDo/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                    <div class="activity__item id-dXeYAhDkweA">
+                        <a href="https://www.youtube.com/watch?v=dXeYAhDkweA" data-youtube-id="dXeYAhDkweA" class="video-thumb js-trigger-modal">
+                            <img src="https://artoken.io/assets/img/icon__play.svg" alt="" width="66" height="66" class="icon play">
+                            <style>.activity__item.id-dXeYAhDkweA > a {background-image: url(https://img.youtube.com/vi/dXeYAhDkweA/0.jpg) !important;}</style>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medium-12 cell small">
+            Scroll to right →
+        </div>
+        <section class="video-modal">
+            <div id="video-modal-content" class="video-modal-content">
+                <img class="video-sizer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaAQAAAAAXvWD/AAAAAnRSTlMAAHaTzTgAAAAWSURBVHgBY6ABGAWjYBSMglEwCkYBAAdiAAFufS70AAAAAElFTkSuQmCC" />
+                <iframe id="youtube" width="100%" height="100%" frameborder="0" allowfullscreen src= ></iframe>
+                <a href="#" class="close-video-modal">Close Video</a>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+    </div>
+</section>
+
+<section class="in-media section-space-top">
+
+    <div class="grid-container">
+        <div class="large-12 cell text-center">
+            <h1 class="padding-bottom">В прессе</h1>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://icowatchlist.com/blog/ico-focus-interview-kosta-popov-cappasity/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/icowatchlist.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">ICO Focus: Interview With Kosta Popov of Cappasity ICO Focus: Interview With Kosta Popov of Cappasity</div></div>
+                    <div class="date">23 октября 2017</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://www.huffingtonpost.com/entry/59ed1990e4b02c6e3c609c28" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/huffingtonpost.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">3D technologies at the service of online retailers: how to increase sales and reduce costs</div></div>
+                    <div class="date">22 октября 2017</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://cointelegraph.com/news/3d-and-vr-themed-quiz-by-cointelegraph-and-cappasity" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo-placeholder.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">3D and VR-Themed Quiz By Cointelegraph and Cappasity</div></div>
+                    <div class="date">12 октября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://venturebeat.com/2017/09/26/how-mixed-reality-and-blockchain-will-work-together" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo_venturebeat_bw.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Mixed reality and blockchain can work together, from retail to gaming</div></div>
+                    <div class="date">26 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://cointelegraph.com/news/how-blockchain-can-help-creators-and-consumers-monetize-data" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo-placeholder.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">How Blockchain Can Help Creators and Consumers Monetize Data</div></div>
+                    <div class="date">25 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://next.reality.news/news/market-reality-mira-closes-funding-round-as-cappasity-prepares-blockchain-crowdsale-0180171" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/nextrealitylogo.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Mira Closes Funding Round as Cappasity Prepares Blockchain Crowdsale</div></div>
+                    <div class="date">22 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://bitcoinmagazine.com/articles/building-cappasity-ar-vr-and-3d-content" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/bitcoin_png.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Building “Cappasity” for AR, VR and 3D Content</div></div>
+                    <div class="date">16 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://cointelegraph.com/news/bringing-blockchain-technology-to-e-commerce-current-trends" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo-placeholder.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Bringing Blockchain Technology to E-Commerce: Current Trends</div></div>
+                    <div class="date">15 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://bitcoinmagazine.com/partners/cappasity-drives-world-arvr-one-block-time/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/bitcoin_png.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Drives World of AR/VR, One Block at a Time</div></div>
+                    <div class="date">6 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://www.coinspeaker.com/2017/09/04/cappasity-set-unveil-worlds-first-blockchain-platform-arvr3d-content" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/coins_png.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Set to Unveil World’s First Blockchain Platform for AR/VR/3D Content</div></div>
+                    <div class="date">4 сентября 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://btcmanager.com/artoken-platform-captures-blockchain-arvr-synergy" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/btc_png.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">ARToken Platform Captures Blockchain and AR/VR Synergy</div></div>
+                    <div class="date">31 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://3dprint.com/185955/cappasity-blockchain-ecosystem" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_9.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Announces Development of ARToken-Powered Blockchain Ecosystem for Quick and Easy AR/VR/3D Content Creation</div></div>
+                    <div class="date">31 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="http://www.filmfestivals.com/blog/aviva_press/fintech_week_new_york_2017_coverage?page&#x3D;12" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/film_png.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Fintech Week New York 2017 Coverage</div></div>
+                    <div class="date">30 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://www.androidheadlines.com/2017/08/cappasity-announces-blockchain-market-arvr3d-content.html" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_8.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Announces Blockchain Market For AR/VR/3D Content</div></div>
+                    <div class="date">29 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://cointelegraph.com/news/vr-needs-blockchain-to-solve-copyright-issues-interview-with-cappasity-founder" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo-placeholder.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">VR Needs Blockchain to Solve Copyright Issues: Interview with Cappasity Founder</div></div>
+                    <div class="date">29 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://bitcoinexchangeguide.com/artoken" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_1.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">BitcoinExchangeGuide: ARToken review</div></div>
+                    <div class="date">25 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="http://www.the-blockchain.com/2017/08/24/cappasity-arvr3d-content-blockchain-platform-gears-token-sale/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_2.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity – AR/VR/3D Content Blockchain Platform Gears up for Token Sale</div></div>
+                    <div class="date">24 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://coinidol.com/first-vr-content-blockchain-platform-crowdsale/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_3.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">World’s First AR/VR/3D Content Blockchain Platform Gears Up For Token Crowd-Sale</div></div>
+                    <div class="date">24 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="http://www.newsbtc.com/2017/08/22/cappasity-introduces-ar-token-brings-cutting-edge-technologies-e-commerce-segment/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_4.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Introduces ARToken as it Brings Cutting Edge Technologies to E-Commerce Segment</div></div>
+                    <div class="date">22 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://www.forbes.com/forbes/welcome/?toURL&#x3D;https://www.forbes.com/sites/rogeraitken/2017/08/17/how-the-blockchain-is-disrupting-the-art-economy-as-we-know-it/&amp;refURL&#x3D;https://cappasity.com/forbes-blockchain-technology-disrupting-art-economy-know/&amp;referrer&#x3D;https://cappasity.com/forbes-blockchain-technology-disrupting-art-economy-know/" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_5.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Forbes: How Blockchain Technology Is ‘Disrupting’ The Art Economy As We Know It</div></div>
+                    <div class="date">17 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://www.cryptocoinsnews.com/cappasity-introduces-global-arvr-ecosystem-september-ico" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/media_7.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">Cappasity Introduces Global AR/VR Ecosystem through September ICO</div></div>
+                    <div class="date">16 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 cell in-media__item">
+                <a href="https://cointelegraph.com/news/new-platform-leverages-blockchain-infrastructure-to-create-rent-sell-3d-content" target="_blank" rel="noopener noreferrer">
+                    <div class="logo">
+                        <img src="https://artoken.io/assets/img/media/logo-placeholder.png" alt="">
+                    </div>
+                    <div class="desc"><div class="desc_wrap">New Platform Leverages Blockchain Infrastructure to Create, Rent, Sell 3D Content</div></div>
+                    <div class="date">15 августа 2017 г.</div>
+                </a>
+            </div>
+            <div class="medium-12 cell view-all-news">
+                <p><b>Посмотреть все новости</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="subscribe-for-announcements background-white">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-6 medium-offset-3 cell text-center">
+                <form name="subscribe-news" class="subscribe-form-new" id="subscribe-news">
+                    <h3><span class="show-for-medium">Token Sale is Live. </span><br /><span>Subscribe for announcements</span></h3>
+                    <input type="hidden" name="type" value="news" />
+                    <div class="input-group">
+                        <input required name="e" class="input-group-field" type="email" placeholder="Enter email">
+                        <div class="input-group-button">
+                            <input name="subscribe" type="submit" class="button for-valid g-recaptcha" data-sitekey="6Lfe2DQUAAAAANYhH8PSiiL2GyC2EcqXeWSa8S1G" data-callback="artoken.onSubscribeSubmitNews" value="Подписаться">
+                            <input type="submit" class="button for-invalid" value="Подписаться">
+                        </div>
+                    </div>
+                    <div id="success_message3" class="callout success" style="display: none;">
+                        <p>You have been successfully subscribed</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact-block grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 large-3 large-offset-1 cell">
+                <div class="contact-block__item">
+                    <b>Наш адрес</b>
+                    <div class="content">3501 Thomas Rd, Unit 3,<br>Santa Clara, California, 95054<br>+1 415 8002844</div>
+                </div>
+            </div>
+            <div class="medium-6 large-4 cell">
+                <div class="contact-block__item">
+                    <b>Cappasity в Plug and Play Tech Center</b>
+                    <div class="content">440 N. Wolfe Rd. – Sunnyvale, CA 94085</div>
+                    <a href="http://plugandplaytechcenter.com">plugandplaytechcenter.com</a>
+                </div>
+                <div class="contact-block__item">
+                    <b>Cappasity в Lafayette Plug and Play</b>
+                    <div class="content">32 rue de Paradis, 75010 Paris</div>
+                    <a href="http://lafayetteplugandplay.com">lafayetteplugandplay.com</a>
+                </div>
+            </div>
+            <div class="medium-6 large-3 cell">
+                <div class="contact-block__item">
+                    <b>Контактное лицо</b>
+                    <div class="content">Marianna Alshina</div>
+                    <a href="/cdn-cgi/l/email-protection#d0bdfeb1bca3b8b9beb190b3b1a0a0b1a3b9a4a9feb3bfbd"><span class="__cf_email__" data-cfemail="65084b0409160d0c0b04250604151504160c111c4b060a08">[email&#160;protected]</span></a>
+                </div>
+                <div class="contact-block__item">
+                    <b>Служба поддержки</b>
+                    <a href="/cdn-cgi/l/email-protection#e695939696899492a68587969687958f929fc885898b"><span class="__cf_email__" data-cfemail="98ebede8e8f7eaecd8fbf9e8e8f9ebf1ece1b6fbf7f5">[email&#160;protected]</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="g-foot">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="medium-12 large-8">
+                <div class="g-timer">
+                    <div class="g-timerText">
+                        <h4>Public Sale is LIVE - Join now! Don&#x27;t miss 20% maximum bonus</h4>
+                    </div>
+                    <div class="is-countdown"></div>
+                </div>
+            </div>
+            <div class="medium-12 large-4">
+                <div class="g-foot-btn">
+                    <button id="whitelist-apply-button" class="button primary get" data-open="ApplyWPConfirm" data-track-category="Whitelist Application" data-track-type="Applied" data-track-label="Application Button">Купить ARTokens</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="social-block">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 large-10 large-offset-1 cell text-center">
+                <ul class="social big">
+                    <li><a class="icon telegram" href="https://t.me/artoken" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon facebook" href="https://www.facebook.com/cappasity" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon twitter" href="https://twitter.com/cappasity" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon in" href="https://www.linkedin.com/company-beta/3773119/" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon tube" href="https://www.youtube.com/channel/UCRCSGdmb2ClX-3P9A6oXkAw" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon bitcoin" href="https://s.artoken.io/8" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon github" href="https://github.com/CappasityTech" target="_blank" rel="noopener noreferrer"> </a></li>
+                    <li><a class="icon reddit" href="https://www.reddit.com/r/ARToken_by_Cappasity/" target="_blank" rel="noopener noreferrer"> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 large-4 cell left top">
+                <span class="copyright">© Copyright 2017 Cappasity Inc. <br />All rights reserved.</span>
+            </div>
+            <div class="medium-12 large-8 cell right">
+                <ul class="menu">
+                    <li><a href="https://blog.artoken.io/" target="_blank" rel="noopener noreferrer">Блог</a></li>
+                    <li><a href="https://cappasity.com/" target="_blank" rel="noopener noreferrer">Наша технология</a></li>
+                    <li><a href="/whitepaper/" target="_blank" class="has-pdf">White Paper</a></li>
+                    <li><a href="/one-pager/" target="_blank" class="has-pdf">One-pager</a></li>
+                    <li><a href="/howey-test/" target="_blank" class="has-pdf">Тест Хоуи</a></li>
+                    <li><a href="/ru/faq.html">FAQ</a></li>
+                </ul>
+                <a class="comodo" href="https://secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=SC5&v_search=https://artoken.io&x=6&y=5" target="_blank" rel="noopener noreferrer"><img src="https://artoken.io/assets/img/comodo.png" alt="" width="100"></a>
+            </div>
+            <div class="medium-12 large-4 cell left bottom">
+                <span class="copyright">© Copyright 2017 Cappasity Inc. <br />All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="reveal for-whitelist" id="ApplyWP" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <form name="apply-wl" class="subscribe-form-new" id="subscribe-wl" data-track-category="Whitelist Application" data-track-type="Step 1" data-track-label="Detail Submitted">
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell item">
+                <h2>Whitelist</h2>
+            </div>
+            <div class="small-12 cell">
+                <div class="item">
+                    <p>Мы тщательно отбираем участников нашей экосистемы с учетом того, какой вклад они будут вносить в ее развитие. В whitelist попадают те, кто заинтересован в активном сотрудничестве с нашим проектом.</p>
+                    <p>Если вас интересует продажа токенов ARToken, укажите ваши данные, чтобы мы могли добавить вас в whitelist.</p>
+                </div>
+                <div class="item">
+                    <input name="e" class="text-input" required autofocus type="email" placeholder="Enter email">
+                    <p>Хотите больше узнать о нашем проекте? Прочтите <a href="/whitepaper/" target="_blank" rel="noopener noreferrer">whitepaper</a>.</p>
+                </div>
+            </div>
+            <div class="small-12 cell text-right">
+                <button class="button primary get for-valid g-recaptcha" data-badge="inline" data-sitekey="6Lfe2DQUAAAAANYhH8PSiiL2GyC2EcqXeWSa8S1G" data-callback="artoken.onSubscribeSubmitWhitelistPopup">Далее &#8594;</button>
+                <button type="submit" class="button primary get for-invalid">Далее &#8594;</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="reveal for-whitelist" id="ApplyWPConfirm" data-reveal data-close-on-click="true" data-animation-out="fade-out">
+    <form>
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell text-center">
+                <div class="new-success">
+                    <div class="new-success__item proccess">
+                        <div class="item">
+                            <h2>Спасибо!</h2>
+                            <p>Now you can proceed to Cappasity ARToken Sale portal (<a href="https://tokensale.cappasity.com">https://tokensale.cappasity.com</a>) to complete the registration and participate in the token presale.</p>
+                        </div>
+                        <div class="small-12 cell text-right">
+                            <a href="https://tokensale.cappasity.com" class="button primary get for-invalid" data-track-category="Whitelist Application" data-track-type="Step 2" data-track-label="Panel Login Button Clicked">Continue to Presale Portal &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="https://artoken.io/cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script>
+<script src="https://artoken.io/assets/js/app.243b1ac5f09686c145b1.js"></script>
+
+</body>
+</html>
